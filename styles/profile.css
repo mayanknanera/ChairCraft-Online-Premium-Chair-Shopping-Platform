@@ -1,0 +1,86 @@
+/* Profile/account dropdown styles */
+.profile-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.profile-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  vertical-align: middle;
+  border: 2px solid #eb984e;
+  background: #fff;
+  transition: box-shadow 0.2s;
+}
+.profile-icon:hover {
+  box-shadow: 0 0 0 2px #e67e22;
+}
+.profile-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 44px;
+  background: #fff;
+  border-radius: 14px;
+  border: 1.5px solid #eb984e;
+  min-width: 200px;
+  box-shadow: 0 8px 32px rgba(8, 127, 91, 0.13), 0 2px 8px rgba(52, 58, 64, 0.1);
+  z-index: 100;
+  padding: 10px 0 6px 0;
+  animation: dropdownFadeIn 0.25s;
+}
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.profile-menu a,
+.profile-menu span {
+  display: block;
+  padding: 14px 28px;
+  color: #343a40;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+  border-radius: 8px;
+}
+.profile-menu a.profile-link:hover,
+.profile-menu a.logout-link:hover {
+  background: #eb984e;
+  color: #fff;
+}
+.profile-menu .logout-link {
+  border-top: 1.5px solid #e0e0e0;
+  margin-top: 6px;
+}
+.profile-welcome {
+  font-weight: 700;
+  color: #eb984e;
+  background: #e6fcf5;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 2px;
+  font-size: 21px;
+  padding-bottom: 8px;
+}
+.profile-login-btn {
+  background: none;
+  border: none;
+  color: #fdf2e9;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: background 0.2s, color 0.2s;
+}
+.profile-login-btn:hover {
+  background: #fdf2e9;
+  color: #fff;
+}
